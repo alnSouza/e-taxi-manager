@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">50dp</dimen>
+    <dimen name="m_columns">2dp</dimen>
+    <dimen name="m_width">100dp</dimen>
+    <dimen name="m_card_width">70dp</dimen>
+    <dimen name="m_card_height">70dp</dimen>
+    <dimen name="orientationV">1</dimen>
+    <dimen name="w_radio_races">150dp</dimen>
+    <dimen name="h_radio_races">50dp</dimen>
+    <dimen name="w_spinner_races">150dp</dimen>
+    <dimen name="h_spinner_races">50dp</dimen>
+</resources>

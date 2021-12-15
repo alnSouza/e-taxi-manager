@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RacesFragment"
+    android:id="@+id/racesfrag">
+
+    <GridLayout
+        android:id="@+id/racesFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Filtros"
+            android:padding="10dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:background="@drawable/radius_todaycard"
+            android:textColor="@color/cardColor"/>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:background="@drawable/radius_todaycard">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/hard_drive"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/newBkpSecurityRaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nova cópia de segurança +"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/textColorDefault"
+                android:background="@color/material_on_surface_stroke"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+
+    <GridLayout
+        android:id="@+id/filters"
+        android:layout_below="@id/racesFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        >
+        <Spinner
+            android:id="@+id/years"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_width="@dimen/w_spinner_races"
+            android:layout_height="@dimen/h_spinner_races"
+            android:background="@drawable/radius_todaycard"
+            android:popupBackground="@drawable/radius_todaycard"/>
+
+        <Spinner
+            android:id="@+id/months"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/w_spinner_races"
+            android:layout_height="@dimen/h_spinner_races"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/radius_todaycard"
+            android:popupBackground="@drawable/radius_todaycard"/>
+    </GridLayout>
+
+    <ScrollView
+        android:id="@+id/scrollarea"
+        android:layout_below="@id/filters"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fab">
+
+            <include layout="@layout/content_main" />
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/table"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right|bottom"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#F6F5F8"
+        android:src="@android:drawable/ic_input_add"
+        android:textAlignment="inherit"
+        android:tint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        app:fabCustomSize="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainscreen"
+        app:layout_constraintVertical_bias="1.0"
+        app:maxImageSize="30dp"
+        app:rippleColor="#F5FEFFFF"
+        app:useCompatPadding="true"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/fab"
+        android:layout_below="@+id/mainscreen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:indeterminateTint="@color/colorPrimary" />
+
+
+</RelativeLayout>

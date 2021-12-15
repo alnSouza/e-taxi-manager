@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/main_found"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/foundcolorView"/>
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="#fff"-->
+<!--        android:theme="@style/AppTheme.AppBarOverlay"-->
+<!--        tools:ignore="MissingConstraints">-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center|top"
+        android:gravity="center_vertical"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/found"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="#fff"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        tools:layout_editor_absoluteX="0dp">-->
+<!--    </androidx.viewpager.widget.ViewPager>-->
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="0dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_marginTop="480dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:scrollX="0dp"
+            android:columnCount="2"
+            android:padding="0dp"
+            android:layout_gravity="left|bottom"
+            >
+
+            <LinearLayout
+                android:layout_width="@dimen/m_card_width"
+                android:layout_height="@dimen/m_card_height"
+                android:orientation="vertical"
+                android:background="@drawable/radius_todaycard"
+                android:layout_margin="5dp">
+                <ImageButton
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_sc"
+                    android:padding="10dp"
+                    android:background="@color/material_on_surface_stroke"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/m_card_width"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+                    android:text="Home"
+                    android:textColor="#cccc"
+                    android:textStyle="italic"
+                    android:textSize="12sp"
+                    ></TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/m_card_width"
+                android:layout_height="@dimen/m_card_height"
+                android:orientation="vertical"
+                android:background="@drawable/radius_todaycard"
+                android:layout_margin="5dp">
+                <ImageButton
+                    android:id="@+id/races"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/list"
+                    android:padding="10dp"
+                    android:background="@color/material_on_surface_stroke"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/m_card_width"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+                    android:text="Corridas"
+                    android:textColor="#cccc"
+                    android:textStyle="italic"
+                    android:textSize="12sp"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/m_card_width"
+                android:layout_height="@dimen/m_card_height"
+                android:orientation="vertical"
+                android:background="@drawable/radius_todaycard"
+                android:layout_margin="5dp">
+                <ImageButton
+                    android:id="@+id/fuel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fuel_sc"
+                    android:padding="10dp"
+
+                    android:layout_gravity="center"
+                    android:background="@color/material_on_surface_stroke"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/m_card_width"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+                    android:text="Combustivel"
+                    android:textColor="#cccc"
+                    android:textStyle="italic"
+                    android:textSize="12sp"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/m_card_width"
+                android:layout_height="@dimen/m_card_height"
+                android:orientation="vertical"
+                android:background="@drawable/radius_todaycard"
+                android:layout_margin="5dp">
+                <ImageButton
+                    android:id="@+id/maintence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tool"
+                    android:padding="10dp"
+                    android:background="@color/material_on_surface_stroke"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/m_card_width"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+                    android:text="Manutenção"
+                    android:textColor="#cccc"
+                    android:textStyle="italic"
+                    android:textSize="12sp"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/m_card_width"
+                android:layout_height="@dimen/m_card_height"
+                android:orientation="vertical"
+                android:background="@drawable/radius_todaycard"
+                android:layout_margin="5dp">
+                <ImageButton
+                    android:id="@+id/cloudbkp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/layers"
+                    android:padding="10dp"
+                    android:background="@color/material_on_surface_stroke"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/m_card_width"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+                    android:text="Backup"
+                    android:textColor="#cccc"
+                    android:textStyle="italic"
+                    android:textSize="12sp"
+                    ></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

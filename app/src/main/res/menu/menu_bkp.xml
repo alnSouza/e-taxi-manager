@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.alnsdev.e_taxi.RacesActivity">
+    <item
+        android:id="@+id/update_table"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/relatory"
+        android:orderInCategory="101"
+        android:title="Relatorio"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/newBackup"
+        android:orderInCategory="101"
+        android:title="Fazer Backup"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/restoreBkp"
+        android:orderInCategory="101"
+        android:title="Restaurar Backup"
+        app:showAsAction="never" />
+
+
+</menu>

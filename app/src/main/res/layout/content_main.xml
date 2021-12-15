@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="horizontal"
+    android:scrollbarSize="380dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="@dimen/m_width"
+            android:layout_height="wrap_content"
+            android:text="DESTINO"
+            android:layout_margin="@dimen/m_columns"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="@dimen/m_width"
+            android:layout_height="wrap_content"
+            android:text="DATA/HORA"
+            android:layout_margin="@dimen/m_columns"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="@dimen/m_width"
+            android:layout_height="wrap_content"
+            android:text="VALOR"
+            android:layout_margin="@dimen/m_columns"/>
+        <TextView
+            android:id="@+id/textViewDay"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="@dimen/m_width"
+            android:layout_height="wrap_content"
+            android:text="DIA"
+            android:layout_margin="@dimen/m_columns"/>
+        <TextView
+            android:id="@+id/textViewMounth"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="@dimen/m_width"
+            android:layout_height="wrap_content"
+            android:text="MES"
+            android:layout_margin="@dimen/m_columns"/>
+        <TextView
+            android:id="@+id/textViewYear"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="@dimen/m_width"
+            android:layout_height="wrap_content"
+            android:text="ANO"
+            android:layout_margin="@dimen/m_columns"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_width="@dimen/m_width"
+            android:layout_height="wrap_content"
+            android:text="ACTIONS"
+            android:layout_margin="@dimen/m_columns"/>
+    </TableRow>
+</TableLayout>
+
